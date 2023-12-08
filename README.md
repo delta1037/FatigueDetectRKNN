@@ -22,7 +22,7 @@ ONNX 模型转 RKNN 模型的环境在 `tools\model_tools`，包含一个模型�
 
 检测系统包含人脸检测、人脸关键点检测、眼睛状态检测和嘴巴状态检测几个部分，其中人脸检测部分和人脸关键点部分来自于 [Ultra-Light-Fast-Generic-Face-Detector-1MB](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB) 和 [PFLD_GhostOne](https://github.com/AnthonyF333/PFLD_GhostOne)，可以参考这两个仓库的说明对模型进行再训练。眼睛检测和嘴巴检测部分是一个简单的图片二分类模型，由猫狗二分类模型改进而来，在本系统中是可以继续训练的。眼睛和嘴巴检测的结果通过疲劳判别部分输出是否是疲劳状态（根据帧序列做简单的占比分析而已）。
 
-<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/model_arts.png" width="400px">
+<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/model_arts.png" width="600px">
 
 模型全部通过 `tools\model_tools` 中的模型转换程序，由 ONNX 模型转为 RKNN 模型。（这是一个封装的在线转换程序，人脸检测和人脸关键点检测是离线进行转换的，但是基本逻辑和参数都与在线转换程序一致）
 
@@ -87,7 +87,7 @@ API 是给第三方显示结果用的。
 
 外壳+所有硬件-俯视图：
 
-<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/shell_with_hardware.jpg" width="400px">
+<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/shell_with_hardware.jpg" width="600px">
 
 *注：图片来自于比赛中同学拍摄，为了外观把天线和摄像头的CSI连接线都压在板卡下面了*
 
