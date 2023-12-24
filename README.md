@@ -91,6 +91,16 @@ API 是给第三方显示结果用的。
 
 *注：图片来自于比赛中同学拍摄，为了外观把天线和摄像头的CSI连接线都压在板卡下面了*
 
+## 4.2 控制界面
+
+访问`http://your_board_ip:5000`后的主界面：
+
+<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/browser_main.jpg" width="600px">
+
+点击主界面上的实时监测，打开本地摄像头实时监测界面（点击开始监测后人像位置会显示实时图像和检测结果）：
+
+<img src="https://github.com/delta1037/FatigueDetectRKNN/blob/main/images/browser_detect.jpg" width="600px">
+
 ## 最后
 
 以上的所有架构图和流程图使用[drawio](https://github.com/jgraph/drawio)绘制。
